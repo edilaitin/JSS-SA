@@ -82,14 +82,16 @@ class JobShopSchedulingProblem:
         return True
 
 
-# function that prints schedule as readable output
-def print_result(solution):
+# function that returns schedule as readable output
+def format_result(solution):
     jobs, schedule = solution
     i = 0
+    result = ''
     for machine in schedule:
         string = "machine " + str(i) + " : "
         for job in machine:
             string = string + "(" + str(job[0][0]) + ", " + str(job[0][1]) + ", " + str(job[1]) + ", " + str(
-                job[2]) + ")"
-        print(string)
+                job[2]) + ") "
+        result = result + string + '\n'
         i += 1
+    return result
