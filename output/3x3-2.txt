@@ -1,0 +1,9 @@
+Start Problem:  3x3-2.txt
+Best makespan:  18
+
+Solution (job_index, subtask_index, start, end):
+machine 0 : (0, 0, 0, 4) (2, 0, 4, 10) (1, 2, 10, 14) 
+machine 1 : (0, 1, 4, 7) (1, 1, 7, 10) (2, 2, 15, 18) 
+machine 2 : (1, 0, 0, 4) (0, 2, 7, 12) (2, 1, 12, 15) 
+
+Execution time: 2.749823570251465 seconds
